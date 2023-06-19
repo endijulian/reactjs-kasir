@@ -1,19 +1,12 @@
 import React from "react";
-import {
-  Button,
-  Container,
-  Form,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 const NavbarComponent = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container fluid>
+    <Navbar variant="dark" expand="lg">
+      <Container>
         <Navbar.Brand href="#">
-          <b>ReactJs Kasir-App</b>
+          <strong>ReactJs Kasir-App</strong>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -38,15 +31,6 @@ const NavbarComponent = () => {
               Link
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
